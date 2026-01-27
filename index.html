@@ -1,64 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Channel Partners</title>
 
   <style>
     body {
-      font-family: "Times New Roman", Times, serif;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff2f92 0%, #ff8c1a 100%);
     }
 
-    h1 {
-      font-weight: bold;
-      color: #000;
+    .partners {
+      text-align: center;
+      padding: 50px 20px;
     }
 
-    .brands {
+    .partners h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .partners p {
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      font-size: 18px;
+    }
+
+    .partners-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .partner-card {
+      text-decoration: none;
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      padding: 30px;
+      background: #fafafa;
       display: flex;
-      flex-wrap: wrap;   /* allows images to wrap to next row */
-      gap: 20px;         /* space between images */
-      justify-content: center; /* center the row of logos */
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .brands img {
-      width: 80px;
-      height: auto;
+    .partner-card img {
+      max-width: 150px;
+      max-height: 80px;
+      object-fit: contain;
+    }
+
+    .partner-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
   </style>
 </head>
+
 <body>
 
-<h1 style="text-align:center;">Channel Partners</h1>
+  <section class="partners">
+    <h2>🤝 Channel Partners</h2>
+    <p>
+      We collaborate with globally reputed brands to ensure top-quality
+      components and performance reliability
+    </p>
 
-<div class="brands">
-  <!-- Existing brands -->
-  <img src="abb.jpg" alt="ABB">
-  <img src="bajaj.jpg" alt="Bajaj">
-  <img src="havells.jpg" alt="Havells">
-  <img src="bch.jpg" alt="BCH">
-  <img src="luker.jpg" alt="Luker">
-  <img src="anchorpanasonic.jpg" alt="Anchor Panasonic">
-  <img src="wipro.jpg" alt="Wipro">
-  <img src="neptune.jpg" alt="Neptune">
-  <img src="mennekes.jpg" alt="Mennekes">
-  <img src="trinity.jpg" alt="Trinity">
-  <img src="snider.jpg" alt="Snider">
-  <img src="bentechbenlo.jpg" alt="Bentech Benlo">
-  <img src="l&t.jpg" alt="L&T">
-  <img src="danfoss.jpg" alt="Danfoss">
-  <img src="mitsubishi.jpg" alt="Mitsubishi">
-  <img src="delta.jpg" alt="Delta">
-  <img src="suguna.jpg" alt="Suguna">
-  <img src="rrcable.jpg" alt="RR Cable">
-  <img src="saljer.jpg" alt="Saljer">
+    <div class="partners-grid">
 
-  <!-- New brands -->
-  <img src="finolex.jpg" alt="Finolex">
-  <img src="finecab.jpg" alt="Finecab">
-  <img src="kei.jpg" align=right alt="KEI">
-  <img src="polycab.jpg" alt="Polycab">
-   <img src="bharath.jpg" alt="BHARATH BIJLEE">
-</div>
+      <!-- Full list in the requested order -->
+    <a href="https://new.abb.com/" target="_blank" class="partner-card"><img src="abb.jpg" alt="ABB"></a>
+<a href="https://www.larsentoubro.com/" target="_blank" class="partner-card"><img src="l&t.jpg" alt="L&T"></a>
+<a href="https://www.se.com/in/en/" target="_blank" class="partner-card"><img src="schneider.jpg" alt="Schneider"></a>
+<a href="https://www.bajajauto.com/" target="_blank" class="partner-card"><img src="bajaj.jpg" alt="Bajaj"></a>
+<a href="https://www.panasonic.com/in/" target="_blank" class="partner-card"><img src="anchor-panasonic.jpg" alt="Anchor (by Panasonic)"></a>
+<a href="https://www.anchorbch.com/" target="_blank" class="partner-card"><img src="anchor.jpg" alt="Anchor"></a>
+<a href="https://www.anchorbch.com/" target="_blank" class="partner-card"><img src="bch.jpg" alt="BCH"></a>
+<a href="https://www.neptunepumps.com/" target="_blank" class="partner-card"><img src="neptune.jpg" alt="Neptune"></a>
+<a href="https://www.havells.com/" target="_blank" class="partner-card"><img src="havells.jpg" alt="Havells"></a>
+<a href="https://www.polycab.com/" target="_blank" class="partner-card"><img src="polycab.jpg" alt="Polycab"></a>
+<a href="https://www.kei-ind.com/" target="_blank" class="partner-card"><img src="kei.jpg" alt="KEI"></a>
+<a href="https://www.finecab.com/" target="_blank" class="partner-card"><img src="finecab.jpg" alt="Finecab"></a>
+<a href="#" target="_blank" class="partner-card"><img src="luker.jpg" alt="Luker"></a>
+<a href="https://www.wipro.com/business/" target="_blank" class="partner-card"><img src="wipro.jpg" alt="Wipro"></a>
+<a href="https://www.salzerindia.com/" target="_blank" class="partner-card"><img src="salzer.jpg" alt="Salzer"></a>
+<a href="https://new.abb.com/products/measurement-products/measurement-products-danfoss" target="_blank" class="partner-card"><img src="danfoss.jpg" alt="Danfoss"></a>
+<a href="#" target="_blank" class="partner-card"><img src="bijlee.jpg" alt="Bharath Bijlee"></a>
+<a href="#" target="_blank" class="partner-card"><img src="suguna.jpg" alt="Suguna"></a>
+<a href="https://www.mitsubishielectric.com/" target="_blank" class="partner-card"><img src="mitsubishi.jpg" alt="Mitsubishi"></a>
+<a href="https://www.deltaelectronics.com/" target="_blank" class="partner-card"><img src="delta.jpg" alt="Delta"></a>
+<a href="#" target="_blank" class="partner-card"><img src="bentech.jpg" alt="Bentech"></a>
+<a href="#" target="_blank" class="partner-card"><img src="benlo.jpg" alt="Benlo"></a>
+<a href="#" target="_blank" class="partner-card"><img src="rrkabel.jpg" alt="RR Kabel"></a>
+<a href="https://www.mennekes.com/en/" target="_blank" class="partner-card"><img src="mennekes.jpg" alt="Mennekes"></a>
+<a href="#" target="_blank" class="partner-card"><img src="trinity.jpg" alt="Trinity"></a>
+
+
+    </div>
+  </section>
 
 </body>
 </html>
